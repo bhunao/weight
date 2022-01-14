@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>{{ name }}</h1>
+<hr>
+<p><span class="badge">{{ weight_list|length }}</span> coisas:</p><br>
+
+<div>
+  <table class="table">
+    <tr>
+      <th>nome</th>
+      <th>peso</th>
+      <th>data</th>
+    </tr>
+    {% for weight in weight_list %}
+    <tr>
+      <td>{{ weight.name }}</td>
+      <td>{{ weight.weight }}</td>
+      <td>{{ weight.date }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock content %}
