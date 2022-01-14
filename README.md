@@ -1,3 +1,3 @@
-# weight
+# Wiki
 
-dunno lul
+Pagina para salver e buscar textos.
